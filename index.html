@@ -5,57 +5,110 @@
   <title>Yuvraj Singh Rajput | Personal Home Page</title>
   <style>
     body {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: #333333;
       margin: 0 auto;
       padding: 0;
       max-width: 950px;
       width: 85%;
       line-height: 1.6;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
+      animation: fadeIn 1s ease-in;
     }
 
+    /* Header */
     header {
       padding: 20px 0;
       text-align: center;
-      border-bottom: 2px solid #006633;
-      background-color: #f4fdf8;
+      border-bottom: 2px solid #0056b3;
+      background: linear-gradient(135deg, #e6f2ff, #f9fbff);
+      animation: slideDown 1s ease-out;
     }
 
     h1 {
       margin: 0.5rem 0;
       font-family: Georgia, serif;
-      color: #006633;
+      color: #0056b3;
+      font-size: 2.5rem;
+      animation: glow 2s infinite alternate;
     }
 
     h2 {
       margin-top: 1rem;
-      color: #004422;
+      color: #003366;
     }
 
+    /* Main Content */
     main {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
+      animation: fadeInUp 1s ease-out;
     }
 
+    p {
+      max-width: 700px;
+      margin: 0.5rem auto;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
     footer {
       margin-top: 2rem;
       padding: 1rem;
       text-align: center;
-      border-top: 2px solid #006633;
-      font-size: 0.9rem;
-      background-color: #f9f9f9;
+      border-top: 2px solid #0056b3;
+      font-size: 0.95rem;
+      background: #f2f8ff;
+      animation: fadeIn 2s ease-in;
     }
 
     footer a {
       text-decoration: none;
-      color: #006633;
-      margin: 0 0.5rem;
+      color: #0056b3;
+      margin: 0 0.7rem;
       font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    footer a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -4px;
+      background-color: #0056b3;
+      transition: width 0.3s ease;
     }
 
     footer a:hover {
-      color: #e11d48;
+      color: #ff4081;
+    }
+
+    footer a:hover::after {
+      width: 100%;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #007bff; }
+      to { text-shadow: 0 0 15px #66b2ff; }
     }
   </style>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -72,14 +125,14 @@
       This page is my personal landing space for coursework and professional projects.
     </p>
     <p>
-      I am interested in web development and cybersecurity and I enjoy working on projects that challenge me to learn new skills.
-      
+      I am interested in web development and cybersecurity, and I enjoy working on projects that challenge me 
+      to learn new skills and push my creativity further.
     </p>
   </main>
 
   <footer>
     <a href="itis3135/">ITIS3135</a> ~
-    <a href="https://github.com/yuvrajsr2" target="_blank">GitHub.com</a> ~
+    <a href="https://github.com/yuvrajsr2" target="_blank">GitHub</a> ~
     <a href="http://webpages.charlotte.edu/yrajput" target="_blank">CLT Web</a> ~
     <a href="http://yuvrajsr2.github.io/" target="_blank">GitHub.io</a> ~
     <a href="https://www.linkedin.com/in/yrajput07/" target="_blank">LinkedIn</a>
