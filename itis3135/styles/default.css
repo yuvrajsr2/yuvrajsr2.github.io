@@ -39,6 +39,31 @@ body {
       animation: fadeInUp 1s ease-out;
     }
 
+    .centered-list{
+        list-style-position: inside;
+        text-align:center;
+        padding-left:0;
+    }
+
+    figure {
+      display: inline-block; /* Keeps image + caption together */
+      margin: 20px auto;
+    }
+    img {
+      width: 200px;   /* Adjust size here */
+      height: auto;   /* Keeps proportions */
+      border-radius: 10px; /* Optional rounded corners */
+    }
+
+    #intro_img {
+      display: block;
+      max-width: 300px;  /* controls how wide it looks */
+      height: auto;      /* keeps proportions */
+      margin: 0 auto;    /* centers image */
+      border-radius: 12px; /* optional: rounded corners */
+    }
+
+
     p {
       max-width: 700px;
       margin: 0.5rem auto;
