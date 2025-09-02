@@ -39,6 +39,21 @@ body {
       animation: fadeInUp 1s ease-out;
     }
 
+    
+    .normal_link:link,
+    .normal_link:visited {
+        color: #0056b3;  
+        text-decoration: none;  
+    }
+
+
+    .normal_link:hover,
+    .normal_link:focus {
+        color: #ff4081;  
+        text-decoration: underline;  
+    }
+
+
     .centered-list{
         list-style-position: inside;
         text-align:center;
@@ -46,21 +61,21 @@ body {
     }
 
     figure {
-      display: inline-block; /* Keeps image + caption together */
+      display: inline-block; 
       margin: 20px auto;
     }
     img {
-      width: 200px;   /* Adjust size here */
-      height: auto;   /* Keeps proportions */
-      border-radius: 10px; /* Optional rounded corners */
+      width: 200px;   
+      height: auto;   
+      border-radius: 10px; 
     }
 
     #intro_img {
       display: block;
-      max-width: 300px;  /* controls how wide it looks */
-      height: auto;      /* keeps proportions */
-      margin: 0 auto;    /* centers image */
-      border-radius: 12px; /* optional: rounded corners */
+      max-width: 300px;  
+      height: auto;      
+      margin: 0 auto;    
+      border-radius: 12px; 
     }
 
 
