@@ -3,7 +3,7 @@ body {
       color: #333333;
       margin: 0 auto;
       padding: 0;
-      max-width: 950px;
+      max-width: 1200px;
       width: 85%;
       line-height: 1.6;
       font-family: "Segoe UI", Arial, sans-serif;
@@ -23,7 +23,7 @@ body {
       margin: 0.5rem 0;
       font-family: Georgia, serif;
       color: #0056b3;
-      font-size: 2.5rem;
+      font-size: 2rem;
       animation: glow 2s infinite alternate;
     }
 
