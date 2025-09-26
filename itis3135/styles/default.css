@@ -40,15 +40,15 @@ body {
     }
 
     
-    .normal_link:link,
-    .normal_link:visited {
+    .normal-link:link,
+    .normal-link:visited {
         color: #0056b3;  
         text-decoration: none;  
     }
 
 
-    .normal_link:hover,
-    .normal_link:focus {
+    .normal-link:hover,
+    .normal-link:focus {
         color: #ff4081;  
         text-decoration: underline;  
     }
