@@ -30,12 +30,12 @@ h1 {
 h2 {
   margin-top: 1rem;
   color: #003366;
-  font-family:'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
   text-align: center;
 }
 
-h3{
+h3 {
   font-family: monospace, sans-serif;
   text-align: center;
 }
@@ -52,7 +52,7 @@ main {
   display: table;
   margin: 0 auto;
   padding: 20px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
   list-style-position: inside;
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.9rem;
@@ -62,15 +62,15 @@ main {
 
 .link-main {
   position: relative;
-  color: #1a73e8; 
+  color: #1a73e8;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .link-main:hover {
-  color: #ff5722; 
-  transform: scale(1.05); 
+  color: #ff5722;
+  transform: scale(1.05);
 }
 
 
@@ -79,7 +79,7 @@ main {
   position: absolute;
   width: 0%;
   height: 2px;
-  bottom: -3px; 
+  bottom: -3px;
   left: 0;
   background-color: #ff5722;
   transition: width 0.3s ease;
@@ -175,6 +175,40 @@ footer a:hover {
 footer a:hover::after {
   width: 100%;
 }
+
+
+.schedule-list {
+  text-align: left;
+  max-width: 60ch;
+  margin: 1rem auto;
+  padding-left: 10rem;
+  color: #0a0a0a;
+}
+
+table {
+  width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: #0056b3;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+  background: #f2f8ff;
+}
+
+
 
 /* Animations */
 @keyframes fadeIn {
