@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yuvraj Singh Rajput - Hobby Page Midterm</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+  <!-- ========== EMBEDDED STYLESHEET (required) ========== -->
+  <style>
+    /* ---------- Base / CRAP-friendly styling ---------- */
+    :root {
+      --bg1: #0b1020;
+      --bg2: #062040;
+      --accent: #ff7a18;
+      /* orange energetic */
+      --accent2: #19d3a7;
+      /* teal */
+      --muted: #cfeff0;
+      --card: #0f1724;
+      --max-width: 900px;
+    }
+
+    /* Reset-ish */
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+      color: var(--muted);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.5;
+    }
+
+    header,
+    main,
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .6rem;
+      padding-top: 1.4rem;
+    }
+
+    .h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--accent);
+      letter-spacing: 0.6px;
+    }
+
+    nav {
+      display: flex;
+      gap: .25rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* nav buttons styled like links but accessible */
+    .nav-btn {
+      background: transparent;
+      border: 2px solid transparent;
+      color: var(--muted);
+      padding: .45rem .6rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all .18s ease;
+      text-decoration: none;
+    }
+
+    .nav-btn:focus {
+      outline: 3px solid rgba(25, 211, 167, .18)
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-2px);
+      color: var(--bg1);
+      background-color: var(--accent2)
+    }
+
+    .divider-emoji {
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      text-align: center
+    }
+
+    main {
+      padding-bottom: 2rem
+    }
+
+    /* Section card */
+    section {
+      display: none;
+      /* hidden by default, shown by .active */
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.02));
+      border-radius: 12px;
+      padding: 1.1rem;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+      margin-bottom: 1rem;
+    }
+
+    .active {
+      display: block;
+      animation: fadeIn .35s ease-in-out
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    h2 {
+      color: var(--accent2);
+      margin-top: 0
+    }
+
+    p {
+      margin: .6rem 0
+    }
+
+    ul {
+      margin: .4rem 0 0 1.2rem
+    }
+
+    /* Figures */
+    figure {
+      margin: 1rem auto;
+      text-align: center
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(3, 6, 20, 0.6);
+      display: block;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      margin-top: .5rem;
+      font-style: normal;
+      color: #c9f6e9;
+    }
+
+    .ai-note {
+      margin-top: .25rem;
+      font-style: italic;
+      color: #a8cbd0
+    }
+
+    /* Tables / forms */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: .6rem
+    }
+
+    th,
+    td {
+      padding: .45rem .6rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: left
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.02)
+    }
+
+    form {
+      margin-top: .6rem;
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      align-items: center
+    }
+
+    input[type="text"],
+    select {
+      padding: .45rem .6rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: transparent;
+      color: var(--muted);
+    }
+
+    .primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      border: none;
+      padding: .5rem .8rem;
+      border-radius: 8px;
+      color: #041018;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    small {
+      color: #9fded4
+    }
+
+    option {
+      background: var(--card);
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+      align-items: center;
+      padding: 1.2rem 0 2.4rem;
+      color: #bfeee3;
+      font-size: .95rem;
+    }
+
+    .validators {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .validators a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: .3rem .45rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02)
+    }
+
+    .design-by {
+      font-weight: 600;
+      color: var(--accent2)
+    }
+
+    .design-by a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .design-by a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+
+    /* Responsive tweaks */
+    @media (min-width:900px) {
+      header {
+        padding: 2rem 0
+      }
+
+      section {
+        padding: 1.5rem
+      }
+    }
+  </style>
+  <!-- ========== END EMBEDDED CSS ========== -->
+</head>
+
+<body>
+  <header>
+    <h1 class="h1">🏐 Hobby: My Favorite Sports</h1>
+
+    <!-- Nav: use buttons (accessible) that call showSection(id) -->
+    <nav aria-label="Primary site navigation">
+      <button class="nav-btn" onclick="showSection('what')" aria-controls="what">🏠 What</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('who')" aria-controls="who">👤 Who</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('when')" aria-controls="when">🕓 When</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('where')" aria-controls="where">📍 Where</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('how')" aria-controls="how">⚙️ How</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('why')" aria-controls="why">💖 Why</button>
+      <span style="color:var(--accent); padding:0 .25rem">🏐</span>
+      <button class="nav-btn" onclick="showSection('ai')" aria-controls="ai">🤖 AI Prompts</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== WHAT (HOME) - default visible ========== -->
+    <section id="what" class="active" aria-labelledby="what-heading">
+      <h2 id="what-heading">What — Home</h2>
+
+      <p>I love playing court and racket sports — fast rallies, quick reflexes, and social competition are what make
+        them my favorite hobbies. My go-to sports are <strong>Volleyball</strong>, <strong>Badminton</strong>,
+        <strong>Table Tennis</strong>, and <strong>Pickleball</strong>.</p>
+
+      <p>On this page you'll find where I play, when I practice, why these sports are awesome, and quick tips to get
+        started. Scroll through each section using the nav above.</p>
+
+      <!-- Figure: combined sports image -->
+      <figure>
+        <!-- Suggested local filename: images/what_court_collage.jpg -->
+        <img src="images/homepage.jpg" alt="Collage of volleyball, badminton, table tennis, and pickleball action">
+        <figcaption>Fast & fun — a collage representing volleyball, badminton, table tennis, and pickleball.
+        </figcaption>
+      </figure>
+
+      <!-- Thing 3: comparison table -->
+      <table aria-label="Quick sport comparison">
+        <thead>
+          <tr>
+            <th>Sport</th>
+            <th>Players</th>
+            <th>Typical Rally/Point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Volleyball</td>
+            <td>6 (team) / 2 (beach)</td>
+            <td>Medium-long rallies, teamwork</td>
+          </tr>
+          <tr>
+            <td>Badminton</td>
+            <td>1 or 2</td>
+            <td>Fast, explosive rallies</td>
+          </tr>
+          <tr>
+            <td>Table Tennis</td>
+            <td>1 or 2</td>
+            <td>Short, rapid-fire rallies</td>
+          </tr>
+          <tr>
+            <td>Pickleball</td>
+            <td>1 or 2</td>
+            <td>Medium, strategic rallies</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+
+    <!-- ========== WHO ========== -->
+    <section id="who" aria-labelledby="who-heading">
+      <h2 id="who-heading">Who — About Me</h2>
+
+      <p>I'm a college student who plays casually and competitively with friends. I picked up racket sports in middle
+        school and volleyball in high school — they stuck with me because they're social and active.</p>
+
+      <p>Outside of sports, I study computer science and love building small projects and automations. Sports give me
+        the perfect break to recharge.</p>
+
+      <!-- Figure: person serving volleyball -->
+      <figure>
+        <!-- Suggested local filename: images/who_serve.jpg -->
+        <img src="images/jannes-glas-0NaQQsLWLkA-unsplash.jpg" alt="Player serving a volleyball under arena lights">
+        <figcaption>Serving up — mid-serve action shot.</figcaption>
+      </figure>
+
+      <!-- Thing: mini survey form -->
+      <form id="favSportForm" onsubmit="event.preventDefault(); showSurveyResult();">
+        <label for="favSport">Which sport is your favorite?</label>
+        <select id="favSport" name="favSport" aria-label="Choose favorite sport">
+          <option>Volleyball</option>
+          <option>Badminton</option>
+          <option>Table Tennis</option>
+          <option>Pickleball</option>
+        </select>
+        <button class="primary" type="submit">Share</button>
+      </form>
+      <p id="surveyResult" style="margin-top:.6rem"></p>
+    </section>
+
+
+    <!-- ========== WHEN ========== -->
+    <section id="when" aria-labelledby="when-heading">
+      <h2 id="when-heading">When — Best Times to Play</h2>
+
+      <p>I usually play in evenings after classes and on weekends. Indoor sports are my winter go-to, while spring and
+        fall are perfect for outdoor volleyball.</p>
+
+      <p>Practice frequency: I try for 2–3 sessions per week — one focused skills session and one casual scrimmage.</p>
+
+      <!-- Figure: evening court lights -->
+      <figure>
+        <!-- Suggested local filename: images/when_evening.jpg -->
+        <img src="images/whenpage.webp" alt="Sports court lit up at evening under lights">
+        <figcaption>Evening play under the lights — best time for competitive matches.</figcaption>
+      </figure>
+
+      <!-- Thing: schedule table -->
+      <table aria-label="Typical weekly schedule">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mon</td>
+            <td>Skills practice (volley drills)</td>
+            <td>7:00 PM</td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td>Pick-up matches (badminton / ping pong)</td>
+            <td>8:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sat</td>
+            <td>Weekend casual games / gym</td>
+            <td>4:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+
+    <!-- ========== WHERE ========== -->
+    <section id="where" aria-labelledby="where-heading">
+      <h2 id="where-heading">Where — Best Locations</h2>
+
+      <p>Favorite playing spots: campus rec center courts, the covered community courts, and occasionally outdoor beach
+        volleyball courts for variety.</p>
+
+      <p>If you want great practice spaces look for well-lit indoor courts (badminton-friendly), stable tables for
+        ping-pong, and official pickleball lines to practice positioning.</p>
+
+      <!-- Figure: sports complex -->
+      <figure>
+        <!-- Suggested local filename: images/where_complex.jpg -->
+        <img src="images/wherepage.png" alt="Modern indoor sports complex with courts">
+        <figcaption>Indoor rec center — perfect for consistent practice year-round.</figcaption>
+      </figure>
+
+      <!-- Thing: short playlist-style list of local spots -->
+      <ol>
+        <li>Campus Recreation Center — best for consistent hours.</li>
+        <li>Riverside Community Courts — great for outdoor volleyball.</li>
+        <li>Downtown Sports Hub — multiple courts and rentable ping-pong lanes.</li>
+      </ol>
+    </section>
+
+
+
+    <!-- ========== HOW ========== -->
+    <section id="how" aria-labelledby="how-heading">
+      <h2 id="how-heading">How — Getting Better</h2>
+
+      <p>Tips to start and improve quickly:</p>
+      <ul>
+        <li>Practice the basic serve and footwork daily for 10–15 minutes.</li>
+        <li>Watch clips of pro players to study positioning and shot selection.</li>
+        <li>Play small-sided games to increase touches and decision-making speed.</li>
+      </ul>
+
+      <!-- Figure: practice drills -->
+      <figure>
+        <!-- Suggested local filename: images/how_drills.jpg -->
+        <img src="images/whopage.jpg" alt="Athlete practicing drills on court">
+        <figcaption>Practice drills — repetition makes muscle memory.</figcaption>
+      </figure>
+
+      <!-- Thing: improvement goals form -->
+      <form id="goalsForm" onsubmit="event.preventDefault(); addGoal();">
+        <label for="goalText">Add a training goal:</label>
+        <input id="goalText" type="text" placeholder="e.g., improve backhand accuracy" required />
+        <button class="primary" type="submit">Add Goal</button>
+      </form>
+      <ul id="goalList" aria-live="polite" style="margin-top:.6rem"></ul>
+    </section>
+
+
+
+    <!-- ========== WHY ========== -->
+    <section id="why" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why — What It Means to Me</h2>
+
+      <p>These sports keep me fit, focused, and connected with friends. The best moments are the laughs after a tight
+        rally or the shared thrill of a winning point.</p>
+
+      <p>They teach patience, strategy, and resilience — skills that carry over into school and personal projects.</p>
+
+      <!-- Figure: group celebrating -->
+      <figure>
+        <!-- Suggested local filename: images/why_celebrate.jpg -->
+        <img src="images/whypage.jpg" alt="Group of players celebrating a match win">
+        <figcaption>Celebration — sports are about community and shared wins.</figcaption>
+      </figure>
+
+      <!-- Thing: inspirational quote -->
+      <blockquote style="border-left:4px solid rgba(255,122,24,.2); padding-left:.8rem; color:#dff6ee; text-align:center;">
+        "Sports do not build character. They reveal it." —
+        <small>Heywood Broun</small>
+      </blockquote>
+    </section>
+
+
+
+    <!-- ========== AI PROMPTS (or notes if only images) ========== -->
+    <section id="ai" aria-labelledby="ai-heading">
+      <h2 id="ai-heading">AI Prompts & Image Sources</h2>
+
+      <p class="ai-note">For this project the AI Prompts I used were</p>
+      <p class="ai-note">Give me a basic summary for all the sections I have to build so I don't forget anything</p>
+      <p class="ai-note">Tell me how to add hidden sections to my code when we click different section buttons using
+        JavaScript</p>
+      <p class="ai-note">How do I add a functional form using JavaScript that can submit data without refreshing the
+        page</p>
+      <p class="ai-note">Generate a modern color scheme for a website about sports using dark mode with accent colors
+      </p>
+      <p class="ai-note">Generate a css stylesheet for a modern dark mode website using the color scheme [insert color
+        scheme here]</p>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="design-by">Designed by <a href="../yrajput.softwares.com/index.html">Yuvraj Web Design</a> ✨</p>
+    <div class="validators" role="navigation" aria-label="Validation links">
+      <!-- <a href="https://validator.w3.org/nu/?doc=https://webpages.charlotte.edu/UNCCID/itis3135/hobby/index.html" -->
+        <!-- target="_blank" rel="noopener">HTML Validator</a> -->
+      <!-- <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://webpages.charlotte.edu/UNCCID/itis3135/hobby/index.html" -->
+        <!-- target="_blank" rel="noopener">CSS Validator</a> -->
+      <!-- <a href="https://wave.webaim.org/report#/" target="_blank" rel="noopener">Accessibility Check (WAVE)</a> -->
+    </div>
+  </footer>
+
+  <!-- ========== JavaScript: section switching + small dynamic features ========== -->
+  <script>
+    // Show selected section and hide others. "what" is default.
+    function showSection(id) {
+      document.querySelectorAll('main section').forEach((s) => s.classList.remove('active'));
+      const sel = document.getElementById(id);
+      if (sel) sel.classList.add('active');
+
+      // update focus for accessibility
+      sel && sel.querySelector('h2') && sel.querySelector('h2').focus();
+      // update URL hash (non-blocking)
+      try { history.replaceState(null, '', '#' + id); } catch (e) { /* nothing */}
+    }
+
+    // On load: if hash exists, show that section, else show 'what'
+    (function init() {
+      const hash = location.hash.replace('#', '');
+      const allowed = ['what', 'who', 'when', 'where', 'how', 'why', 'ai'];
+      showSection(allowed.includes(hash) ? hash : 'what');
+    })();
+
+    // Survey result for Who form
+    function showSurveyResult() {
+      const sel = document.getElementById('favSport');
+      const out = document.getElementById('surveyResult');
+      out.textContent = "Thanks — you picked: " + sel.value + " ⚡";
+    }
+
+    // Goals add
+    function addGoal() {
+      const input = document.getElementById('goalText');
+      const list = document.getElementById('goalList');
+      const val = input.value.trim();
+      if (!val) return;
+      const li = document.createElement('li');
+      li.textContent = val;
+      list.appendChild(li);
+      input.value = '';
+    }
+
+    // small keyboard support: left/right arrow to cycle sections
+    (function keyboardNav() {
+      const order = ['what', 'who', 'when', 'where', 'how', 'why', 'ai'];
+      document.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        const active = order.find((i) => document.getElementById(i).classList.contains('active'));
+        let idx = order.indexOf(active);
+        if (e.key === 'ArrowRight') idx = (idx + 1) % order.length;
+        if (e.key === 'ArrowLeft') idx = (idx - 1 + order.length) % order.length;
+        showSection(order[idx]);
+      });
+    })();
+  </script>
+</body>
+
+</html>
