@@ -14,6 +14,84 @@
 
     <main>
         <h2>Introduction Form</h2>
+
+        <h3>Please submit the form below</h3>
+
+        <form id="introForm">
+      <!-- Personal Info Section -->
+      <label>First Name: <input type="text" id="firstName" name="firstName" value="Yuvraj" required></label><br>
+      <label>Middle Name (Optional): <input type="text" id="middleName" placeholder="Enter middle name"></label><br>
+      <label>Preferred Name (Optional): <input type="text" id="nickname" placeholder="Nickname"></label><br>
+      <label>Last Name: <input type="text" id="lastName" name="lastName" value="Rajput" required></label><br>
+      
+      <label>Acknowledgment Statement: 
+        <input type="text" id="acknowledgment" value="I acknowledge this is my own work." required>
+      </label><br>
+      <label>Acknowledgment Date: 
+        <input type="date" id="ackDate" required>
+      </label><br>
+      
+      <label>Mascot Adjective: 
+        <input type="text" id="mascotAdj" value="Courageous" required>
+      </label><br>
+      <label>Mascot Animal: 
+        <input type="text" id="mascotAnimal" value="Panther" required>
+      </label><br>
+      <label>Divider: 
+        <input type="text" id="divider" value="♥️" required>
+      </label><br>
+
+      <!-- Image Upload -->
+      <label>Picture: 
+        <input type="file" id="picture" accept="image/*">
+      </label><br>
+      <label>Picture Caption: 
+        <input type="text" id="caption" value="This is me at UNC Charlotte!" required>
+      </label><br>
+
+      <!-- Personal Statement -->
+      <label>Personal Statement:</label><br>
+      <textarea id="statement" rows="3" required>I’m a CS major interested in cybersecurity.</textarea><br>
+
+      <!-- Bullets -->
+      <label>Personal Background: <input type="text" id="bullet1" value="From Cary, NC" required></label><br>
+      <label>Academic Background: <input type="text" id="bullet2" value="Computer Science major" required></label><br>
+      <label>Professional Background: <input type="text" id="bullet3" value="Aspiring cybersecurity expert" required></label><br>
+      <!-- add the rest up to bullet7 -->
+
+      <!-- Courses Section -->
+      <div id="courses">
+        <h4>Courses</h4>
+        <div class="course">
+          <input type="text" placeholder="Department" value="ITIS" required>
+          <input type="text" placeholder="Number" value="3135" required>
+          <input type="text" placeholder="Course Name" value="Web App Design" required>
+          <input type="text" placeholder="Reason" value="To learn web dev fundamentals" required>
+        </div>
+      </div>
+      <button type="button" id="addCourse">Add Course</button><br><br>
+
+      <!-- Quote -->
+      <label>Quote: <input type="text" id="quote" value="Keep learning and keep growing." required></label><br>
+      <label>Author: <input type="text" id="quoteAuthor" value="Yuvraj Rajput" required></label><br>
+
+      <!-- Optional -->
+      <label>Funny Thing (Optional): <input type="text" id="funnyThing"></label><br>
+      <label>Something I’d like to share (Optional): <input type="text" id="share"></label><br>
+
+      <!-- Links -->
+      <h4>Links</h4>
+      <input type="url" placeholder="LinkedIn" value="https://linkedin.com/in/yuvrajrajput"><br>
+      <input type="url" placeholder="GitHub" value="https://github.com/yuvrajrajput"><br>
+      <input type="url" placeholder="Portfolio"><br>
+      <input type="url" placeholder="Favorite Website"><br>
+      <input type="url" placeholder="Extra Link"><br><br>
+
+      <!-- Control Buttons -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
     </main>
 
 
