@@ -286,14 +286,14 @@
       }
     }
   </style>
-  <!-- ========== END EMBEDDED CSS ========== -->
+ 
 </head>
 
 <body>
   <header>
     <h1 class="h1">🏐 Hobby: My Favorite Sports</h1>
 
-    <!-- Nav: use buttons (accessible) that call showSection(id) -->
+    
     <nav aria-label="Primary site navigation">
       <button class="nav-btn" onclick="showSection('what')" aria-controls="what">🏠 What</button>
       <span style="color:var(--accent); padding:0 .25rem">🏐</span>
@@ -312,7 +312,7 @@
   </header>
 
   <main>
-    <!-- ========== WHAT (HOME) - default visible ========== -->
+   
     <section id="what" class="active" aria-labelledby="what-heading">
       <h2 id="what-heading">What — Home</h2>
 
@@ -323,15 +323,14 @@
       <p>On this page you'll find where I play, when I practice, why these sports are awesome, and quick tips to get
         started. Scroll through each section using the nav above.</p>
 
-      <!-- Figure: combined sports image -->
+    
       <figure>
-        <!-- Suggested local filename: images/what_court_collage.jpg -->
+      
         <img src="images/homepage.jpg" alt="Collage of volleyball, badminton, table tennis, and pickleball action">
         <figcaption>Fast & fun — a collage representing volleyball, badminton, table tennis, and pickleball.
         </figcaption>
       </figure>
 
-      <!-- Thing 3: comparison table -->
       <table aria-label="Quick sport comparison">
         <thead>
           <tr>
@@ -367,7 +366,7 @@
 
 
 
-    <!-- ========== WHO ========== -->
+    
     <section id="who" aria-labelledby="who-heading">
       <h2 id="who-heading">Who — About Me</h2>
 
@@ -377,14 +376,14 @@
       <p>Outside of sports, I study computer science and love building small projects and automations. Sports give me
         the perfect break to recharge.</p>
 
-      <!-- Figure: person serving volleyball -->
+    
       <figure>
-        <!-- Suggested local filename: images/who_serve.jpg -->
+    
         <img src="images/jannes-glas-0NaQQsLWLkA-unsplash.jpg" alt="Player serving a volleyball under arena lights">
         <figcaption>Serving up — mid-serve action shot.</figcaption>
       </figure>
 
-      <!-- Thing: mini survey form -->
+  
       <form id="favSportForm" onsubmit="event.preventDefault(); showSurveyResult();">
         <label for="favSport">Which sport is your favorite?</label>
         <select id="favSport" name="favSport" aria-label="Choose favorite sport">
@@ -399,7 +398,7 @@
     </section>
 
 
-    <!-- ========== WHEN ========== -->
+  
     <section id="when" aria-labelledby="when-heading">
       <h2 id="when-heading">When — Best Times to Play</h2>
 
@@ -408,14 +407,14 @@
 
       <p>Practice frequency: I try for 2–3 sessions per week — one focused skills session and one casual scrimmage.</p>
 
-      <!-- Figure: evening court lights -->
+ 
       <figure>
-        <!-- Suggested local filename: images/when_evening.jpg -->
+      
         <img src="images/whenpage.webp" alt="Sports court lit up at evening under lights">
         <figcaption>Evening play under the lights — best time for competitive matches.</figcaption>
       </figure>
 
-      <!-- Thing: schedule table -->
+      
       <table aria-label="Typical weekly schedule">
         <thead>
           <tr>
@@ -446,7 +445,7 @@
 
 
 
-    <!-- ========== WHERE ========== -->
+    
     <section id="where" aria-labelledby="where-heading">
       <h2 id="where-heading">Where — Best Locations</h2>
 
@@ -456,14 +455,14 @@
       <p>If you want great practice spaces look for well-lit indoor courts (badminton-friendly), stable tables for
         ping-pong, and official pickleball lines to practice positioning.</p>
 
-      <!-- Figure: sports complex -->
+    
       <figure>
-        <!-- Suggested local filename: images/where_complex.jpg -->
+      
         <img src="images/wherepage.png" alt="Modern indoor sports complex with courts">
         <figcaption>Indoor rec center — perfect for consistent practice year-round.</figcaption>
       </figure>
 
-      <!-- Thing: short playlist-style list of local spots -->
+     
       <ol>
         <li>Campus Recreation Center — best for consistent hours.</li>
         <li>Riverside Community Courts — great for outdoor volleyball.</li>
@@ -473,7 +472,7 @@
 
 
 
-    <!-- ========== HOW ========== -->
+    
     <section id="how" aria-labelledby="how-heading">
       <h2 id="how-heading">How — Getting Better</h2>
 
@@ -484,14 +483,14 @@
         <li>Play small-sided games to increase touches and decision-making speed.</li>
       </ul>
 
-      <!-- Figure: practice drills -->
+  
       <figure>
-        <!-- Suggested local filename: images/how_drills.jpg -->
+
         <img src="images/whopage.jpg" alt="Athlete practicing drills on court">
         <figcaption>Practice drills — repetition makes muscle memory.</figcaption>
       </figure>
 
-      <!-- Thing: improvement goals form -->
+
       <form id="goalsForm" onsubmit="event.preventDefault(); addGoal();">
         <label for="goalText">Add a training goal:</label>
         <input id="goalText" type="text" placeholder="e.g., improve backhand accuracy" required />
@@ -502,7 +501,6 @@
 
 
 
-    <!-- ========== WHY ========== -->
     <section id="why" aria-labelledby="why-heading">
       <h2 id="why-heading">Why — What It Means to Me</h2>
 
@@ -511,14 +509,14 @@
 
       <p>They teach patience, strategy, and resilience — skills that carry over into school and personal projects.</p>
 
-      <!-- Figure: group celebrating -->
+    
       <figure>
-        <!-- Suggested local filename: images/why_celebrate.jpg -->
+  
         <img src="images/whypage.jpg" alt="Group of players celebrating a match win">
         <figcaption>Celebration — sports are about community and shared wins.</figcaption>
       </figure>
 
-      <!-- Thing: inspirational quote -->
+    
       <blockquote style="border-left:4px solid rgba(255,122,24,.2); padding-left:.8rem; color:#dff6ee; text-align:center;">
         "Sports do not build character. They reveal it." —
         <small>Heywood Broun</small>
@@ -527,7 +525,6 @@
 
 
 
-    <!-- ========== AI PROMPTS (or notes if only images) ========== -->
     <section id="ai" aria-labelledby="ai-heading">
       <h2 id="ai-heading">AI Prompts & Image Sources</h2>
 
