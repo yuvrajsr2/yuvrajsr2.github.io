@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("introForm");
 
-  // Prevent default form submit
+  
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     displayIntroPage();
   });
 
-  // Clear button functionality
+  
   document.getElementById("clearBtn").addEventListener("click", () => {
     form.querySelectorAll("input, textarea").forEach(el => el.value = "");
   });
 
-  // Add new course fields dynamically
+ 
   document.getElementById("addCourse").addEventListener("click", () => {
     const div = document.createElement("div");
     div.classList.add("course");
