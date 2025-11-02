@@ -1,0 +1,49 @@
+/* Page-scoped styles for project_overview.html
+   - Keeps header/footer using the global default.css
+   - Ensures main content is left-aligned and list bullets sit with their list items
+   - Scoped under .overview-page to avoid affecting other pages
+*/
+
+.overview-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left; /* override any global centering for this page */
+  box-sizing: border-box;
+}
+
+/* Lists: keep bullets next to text and tidy spacing */
+.overview-page ul {
+  list-style-type: disc;
+  list-style-position: inside; /* puts bullets with the list items instead of far left */
+  margin: 0 0 1rem 0;
+  padding-left: 0; /* let inside position handle indentation */
+}
+
+.overview-page li {
+  margin: 0.25rem 0;
+}
+
+/* Make headings align with content area */
+.overview-page h1,
+.overview-page h2,
+.overview-page h3 {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+/* Figure placeholders — keep them within the content width */
+.overview-page .placeholder {
+  background: #f3f3f3;
+  border: 1px dashed #ccc;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Notes box styling — optional small improvement */
+.overview-page .note {
+  background: #fff8e1;
+  border-left: 4px solid #ffd54f;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
