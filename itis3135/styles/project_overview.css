@@ -76,3 +76,23 @@
   color: #0077c2;
   text-decoration: none;
 }
+
+/* Page Design Details section — keep centered block, but align text left */
+.page-design-details {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Give even spacing inside this section */
+.page-design-details h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: center; /* keep subheadings centered */
+}
+
+.page-design-details p {
+  margin: 0.5rem 0;
+  text-align: left; /* paragraphs align evenly */
+}
