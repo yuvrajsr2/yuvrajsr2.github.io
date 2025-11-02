@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuvraj Singh Rajput ITIS 3135 || Introduction Form</title>
-    <link rel="stylesheet" href="styles/default.css">
-    <link rel="stylesheet" href="styles/form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Singh Rajput ITIS 3135 || Introduction Form</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
 
 
-    <main>
-        <h2>Introduction Form</h2>
+  <main>
+    <h2>Introduction Form</h2>
 
-        <h3>Please submit the form below</h3>
+    <h3>Please submit the form below</h3>
 
-        <form id="introForm">
- 
+    <form id="introForm">
+
       <label>First Name: <input type="text" id="firstName" name="firstName" value="Yuvraj" required></label><br>
       <label>Middle Name (Optional): <input type="text" id="middleName" placeholder="Enter middle name"></label><br>
       <label>Preferred Name (Optional): <input type="text" id="nickname" placeholder="Nickname"></label><br>
       <label>Last Name: <input type="text" id="lastName" name="lastName" value="Rajput" required></label><br>
-      
-      <label>Acknowledgment Statement: 
+
+      <label>Acknowledgment Statement:
         <input type="text" id="acknowledgment" value="I acknowledge this is my own work." required>
       </label><br>
-      <label>Acknowledgment Date: 
+      <label>Acknowledgment Date:
         <input type="date" id="ackDate" required>
       </label><br>
-      
-      <label>Mascot Adjective: 
+
+      <label>Mascot Adjective:
         <input type="text" id="mascotAdj" value="Courageous" required>
       </label><br>
-      <label>Mascot Animal: 
+      <label>Mascot Animal:
         <input type="text" id="mascotAnimal" value="Panther" required>
       </label><br>
-      <label>Divider: 
+      <label>Divider:
         <input type="text" id="divider" value="♥️" required>
       </label><br>
 
 
-      <label>Picture: 
+      <label>Picture:
         <input type="file" id="picture" accept="image/*">
       </label><br>
-      <label>Picture Caption: 
+      <label>Picture Caption:
         <input type="text" id="caption" value="This is me at UNC Charlotte!" required>
       </label><br>
 
-    
+
       <label>Personal Statement:</label><br>
       <textarea id="statement" rows="3" required>I’m a CS major interested in cybersecurity.</textarea><br>
 
- 
+
       <label>Personal Background: <input type="text" id="bullet1" value="From Cary, NC" required></label><br>
       <label>Academic Background: <input type="text" id="bullet2" value="Computer Science major" required></label><br>
-      <label>Professional Background: <input type="text" id="bullet3" value="Aspiring cybersecurity expert" required></label><br>
- 
+      <label>Professional Background: <input type="text" id="bullet3" value="Aspiring cybersecurity expert"
+          required></label><br>
+
 
       <div id="courses">
         <h4>Courses</h4>
@@ -71,7 +74,7 @@
       </div>
       <button type="button" id="addCourse">Add Course</button><br><br>
 
-    
+
       <label>Quote: <input type="text" id="quote" value="Keep learning and keep growing." required></label><br>
       <label>Author: <input type="text" id="quoteAuthor" value="Yuvraj Rajput" required></label><br>
 
@@ -88,17 +91,31 @@
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
       <button type="button" id="clearBtn">Clear</button>
+      <button type="button" id="htmlBtn">Generate HTML</button>
+
+      <!-- Container to display generated HTML -->
+      <section id="htmlOutput" style="display:none;">
+        <pre><code id="htmlCode" class="html"></code></pre>
+      </section>
+
+      <!-- Highlight.js CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+
     </form>
-    </main>
+  </main>
 
 
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
 
 
-    <script src="scripts/HTMLInclude.js"></script>
+  <script src="scripts/HTMLInclude.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script src="scripts/generate_html.js"></script>
 
-    
+
+
 </body>
+
 </html>
