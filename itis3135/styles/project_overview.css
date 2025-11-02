@@ -1,8 +1,4 @@
-/* Page-scoped styles for project_overview.html
-   - Keeps header/footer using the global default.css
-   - Centers text and lists evenly
-   - Adds balanced spacing between all components
-*/
+
 
 .overview-page {
   max-width: 900px;
@@ -13,7 +9,6 @@
   line-height: 1.6;
 }
 
-/* Headings: centered with more breathing room */
 .overview-page h1,
 .overview-page h2,
 .overview-page h3 {
@@ -22,14 +17,12 @@
   margin-bottom: 1rem;
 }
 
-/* Paragraphs: centered, nicely spaced */
 .overview-page p {
   margin: 0 auto 1.25rem auto;
   text-align: center;
   max-width: 800px;
 }
 
-/* Lists: centered as a block, bullets aligned with text */
 .overview-page ul {
   display: inline-block;
   text-align: left; /* keeps bullet + text alignment even */
@@ -39,12 +32,10 @@
   padding-left: 0;
 }
 
-/* List items: add vertical space between lines */
 .overview-page li {
   margin: 0.5rem 0;
 }
 
-/* Figure placeholders — centered and uniform */
 .overview-page .placeholder {
   background: #f3f3f3;
   border: 1px dashed #ccc;
@@ -54,7 +45,6 @@
   max-width: 100%;
 }
 
-/* Notes box styling — centered and visually distinct */
 .overview-page .note {
   background: #fff8e1;
   border-left: 4px solid #ffd54f;
@@ -64,20 +54,17 @@
   text-align: left;
 }
 
-/* Make meta info a little softer and centered */
 .overview-page .meta {
   font-style: italic;
   color: #555;
   margin-bottom: 1.5rem;
 }
 
-/* Make links a little softer and centered */
 .overview-page a {
   color: #0077c2;
   text-decoration: none;
 }
 
-/* Page Design Details section — keep centered block, but align text left */
 .page-design-details {
   text-align: left;
   display: inline-block;
@@ -85,7 +72,6 @@
   max-width: 800px;
 }
 
-/* Give even spacing inside this section */
 .page-design-details h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
