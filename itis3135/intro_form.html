@@ -92,9 +92,9 @@
       <button type="reset">Reset</button>
       <button type="button" id="clearBtn">Clear</button>
       <button type="button" id="htmlBtn">Generate HTML</button>
+      <button type="button" id="jsonBtn">Generate JSON</button>
 
-      <!-- Container to display generated HTML -->
-      
+
 
       <!-- Highlight.js CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
@@ -102,8 +102,13 @@
     </form>
 
     <section id="htmlOutput" style="display:none;">
-        <pre><code id="htmlCode" class="html"></code></pre>
-      </section>
+      <pre><code id="htmlCode" class="html"></code></pre>
+    </section>
+
+    <section id="jsonOutput" style="display:none;">
+      <pre><code id="jsonCode" class="json"></code></pre>
+    </section>
+
   </main>
 
 
@@ -115,6 +120,8 @@
   <script src="scripts/HTMLInclude.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
   <script src="scripts/generate_html.js"></script>
+  <script src="scripts/generate_json.js"></script>
+
 
 
 
