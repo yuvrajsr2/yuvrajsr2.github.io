@@ -10,19 +10,55 @@
   <header>
     <h1 class="page-title">WebDev Tutorials</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="html-page.html">HTML</a> |
-      <a href="css-page.html">CSS</a> |
-      <a href="javascript-page.html">JavaScript</a> |
+      <a href="index.html" class="active">Home</a>
+      <a href="html-page.html">HTML</a>
+      <a href="css-page.html">CSS</a>
+      <a href="javascript-page.html">JavaScript</a>
       <a href="resources-page.html">Resources</a>
     </nav>
   </header>
 
   <main>
-    <h2>Welcome to WebDev Tutorials</h2>
-    <p>Learn HTML, CSS, and JavaScript step by step with clean examples and interactive quizzes!</p>
-    <p>Whether you're a beginner or want to sharpen your front-end skills, this website has you covered.</p>
-    <button onclick="location.href='html.html'" class="btn">Start Learning</button>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h2>Welcome to <span>WebDev Tutorials</span></h2>
+      <p>Learn HTML, CSS, and JavaScript step-by-step with clean examples, practical projects, and interactive quizzes.</p>
+      <p>Whether you're starting your web development journey or sharpening your front-end skills — you're in the right place.</p>
+      <button onclick="location.href='html-page.html'" class="btn">Start Learning</button>
+      <button onclick="location.href='resources-page.html'" class="btn">Explore Resources</button>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features">
+      <h2>What You'll Learn</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🔤 HTML</h3>
+          <p>Understand the structure of web pages — from headings and paragraphs to forms and multimedia.</p>
+        </div>
+        <div class="card">
+          <h3>🎨 CSS</h3>
+          <p>Make your websites beautiful with colors, layouts, animations, and responsive designs.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ JavaScript</h3>
+          <p>Bring interactivity to life — create dynamic elements, handle user input, and power up your pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <h2>About WebDev Tutorials</h2>
+      <p>WebDev Tutorials was created to make web development learning simple, modern, and interactive. No confusing jargon — just clear explanations, code samples, and challenges that help you build real-world confidence.</p>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+      <h2>Start Building the Web Today</h2>
+      <p>Join thousands of learners who are mastering web development — one tutorial at a time.</p>
+      <button onclick="location.href='html-page.html'" class="btn">Begin Now</button>
+    </section>
   </main>
 
   <footer>
