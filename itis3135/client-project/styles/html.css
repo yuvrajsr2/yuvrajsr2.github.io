@@ -1,4 +1,5 @@
 
+
 pre {
   background: #0d0d0d; 
   color: #00ffb3; 
@@ -31,4 +32,32 @@ p code, li code {
 .card.wide {
   max-width: 900px;
   text-align: left;
+}
+
+
+body.html {
+  background-color: #9c4f03;
+  background-image: none;
+}
+
+h2 span {
+  color: #ff8c42; 
+}
+
+.card {
+  border-color: rgba(255, 140, 66, 0.4);
+  box-shadow: 0 0 25px rgba(255, 140, 66, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(255, 140, 66, 0.4);
+}
+
+.btn {
+  background: #ff8c42;
+  box-shadow: 0 0 12px #ff8c42;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #ffb777;
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDev Tutorials | Learn CSS</title>
+  <link rel="stylesheet" href="styles/default.css">
+<link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+  <header>
+    <h1 class="page-title">WebDev Tutorials</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="html-page.html">HTML</a>
+      <a href="css-page.html" class="active">CSS</a>
+      <a href="javascript-page.html">JavaScript</a>
+      <a href="resources-page.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Learn CSS (Cascading Style Sheets)</h2>
+    <p>CSS controls how your website looks. It styles your HTML with colors, layouts, fonts, animations, and more — bringing your content to life!</p>
+
+    <!-- What is CSS -->
+    <section class="card wide">
+      <h3>🎨 What is CSS?</h3>
+      <p>CSS stands for <strong>Cascading Style Sheets</strong>. It describes how HTML elements should be displayed on screen, paper, or in other media.</p>
+      <p>Example:</p>
+      <pre><code>p {
+  color: #00ffb3;
+  font-size: 18px;
+  text-align: center;
+}</code></pre>
+      <p>This code styles all paragraphs (`&lt;p&gt;`) to have bright green text, centered alignment, and a readable font size.</p>
+    </section>
+
+    <!-- Adding CSS -->
+    <section class="card wide">
+      <h3>🔗 Ways to Add CSS</h3>
+      <ul>
+        <li><strong>Inline CSS</strong> — directly inside an element’s tag:</li>
+        <pre><code>&lt;p style="color: blue;"&gt;Hello world!&lt;/p&gt;</code></pre>
+
+        <li><strong>Internal CSS</strong> — inside the <code>&lt;style&gt;</code> tag within <code>&lt;head&gt;</code>:</li>
+        <pre><code>&lt;style&gt;
+p {
+  color: red;
+}
+&lt;/style&gt;</code></pre>
+
+        <li><strong>External CSS</strong> — in a separate stylesheet linked to your HTML:</li>
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+      </ul>
+    </section>
+
+    <!-- Selectors -->
+    <section class="card wide">
+      <h3>🧱 CSS Selectors</h3>
+      <p>Selectors define which HTML elements a style applies to.</p>
+      <ul>
+        <li><strong>Element selector:</strong> <code>p { color: white; }</code></li>
+        <li><strong>Class selector:</strong> <code>.btn { background: #00ffb3; }</code></li>
+        <li><strong>ID selector:</strong> <code>#header { padding: 20px; }</code></li>
+        <li><strong>Descendant selector:</strong> <code>nav a { color: #e5f0ff; }</code></li>
+      </ul>
+    </section>
+
+    <!-- Properties -->
+    <section class="card wide">
+      <h3>⚙️ Common CSS Properties</h3>
+      <p>Here are some of the most used properties when styling a webpage:</p>
+      <ul>
+        <li><strong>color</strong> — text color</li>
+        <li><strong>background</strong> — background color or image</li>
+        <li><strong>font-family</strong> — sets font type</li>
+        <li><strong>margin</strong> / <strong>padding</strong> — spacing outside and inside an element</li>
+        <li><strong>border</strong> — outlines an element</li>
+        <li><strong>display</strong> — defines layout type (block, inline, flex, grid)</li>
+      </ul>
+      <pre><code>div {
+  background: #1c2541;
+  border: 2px solid #00ffb3;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}</code></pre>
+    </section>
+
+    <!-- Layout -->
+    <section class="card wide">
+      <h3>📐 CSS Layout (Flexbox & Grid)</h3>
+      <p>Modern CSS uses <strong>Flexbox</strong> and <strong>Grid</strong> to align elements easily.</p>
+
+      <p><strong>Flexbox Example:</strong></p>
+      <pre><code>.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}</code></pre>
+
+      <p><strong>Grid Example:</strong></p>
+      <pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}</code></pre>
+    </section>
+
+    <!-- Responsive Design -->
+    <section class="card wide">
+      <h3>📱 Responsive Design</h3>
+      <p>Responsive design ensures your website looks great on any device size. Use <strong>media queries</strong> to adjust styles for smaller screens:</p>
+      <pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .card {
+    max-width: 95%;
+  }
+}</code></pre>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Next: Learn JavaScript</h2>
+      <p>Once your pages look amazing with CSS, it’s time to make them interactive with JavaScript!</p>
+      <button onclick="location.href='javascript-page.html'" class="btn">Go to JavaScript</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WebDev Tutorials | Designed by Yuvraj Singh Rajput</p>
+  </footer>
+</body>
+</html>
