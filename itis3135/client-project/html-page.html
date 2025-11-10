@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDev Tutorials | Learn HTML</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/html.css">
+
+</head>
+<body>
+  <header>
+    <h1 class="page-title">WebDev Tutorials</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="html-page.html" class="active">HTML</a>
+      <a href="css-page.html">CSS</a>
+      <a href="javascript-page.html">JavaScript</a>
+      <a href="resources-page.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Learn HTML (HyperText Markup Language)</h2>
+    <p>HTML is the backbone of every webpage. It defines the structure and content of a website using a simple tag-based syntax.</p>
+
+    <section class="card wide">
+      <h3>📘 What is HTML?</h3>
+      <p>HTML stands for <strong>HyperText Markup Language</strong>. It uses <em>elements</em> — also called <strong>tags</strong> — to tell the browser how to display content.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section class="card wide">
+      <h3>🏗️ Basic Structure of an HTML Document</h3>
+      <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong> — Declares the document type.</li>
+        <li><strong>&lt;html&gt;</strong> — Wraps all page content.</li>
+        <li><strong>&lt;head&gt;</strong> — Contains metadata, title, links, etc.</li>
+        <li><strong>&lt;body&gt;</strong> — Holds visible content like text, images, and links.</li>
+      </ul>
+    </section>
+
+    <section class="card wide">
+      <h3>🔤 Common HTML Tags</h3>
+      <ul>
+        <li><strong>&lt;h1&gt;–&lt;h6&gt;</strong>: Headings (largest to smallest)</li>
+        <li><strong>&lt;p&gt;</strong>: Paragraph text</li>
+        <li><strong>&lt;a&gt;</strong>: Links (<code>&lt;a href="url"&gt;link&lt;/a&gt;</code>)</li>
+        <li><strong>&lt;img&gt;</strong>: Images (<code>&lt;img src="image.jpg" alt="desc"&gt;</code>)</li>
+        <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong>: Lists</li>
+        <li><strong>&lt;div&gt;</strong> and <strong>&lt;span&gt;</strong>: Grouping and inline containers</li>
+      </ul>
+    </section>
+
+    <section class="card wide">
+      <h3>🧩 Semantic HTML</h3>
+      <p>Semantic tags give meaning to your content, improving accessibility and SEO. Examples include:</p>
+      <ul>
+        <li><strong>&lt;header&gt;</strong>, <strong>&lt;footer&gt;</strong>, <strong>&lt;main&gt;</strong></li>
+        <li><strong>&lt;article&gt;</strong>, <strong>&lt;section&gt;</strong>, <strong>&lt;aside&gt;</strong></li>
+        <li><strong>&lt;nav&gt;</strong>, <strong>&lt;figure&gt;</strong>, <strong>&lt;figcaption&gt;</strong></li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <h2>Next Up: Learn CSS</h2>
+      <p>Now that you understand HTML structure, let’s style it beautifully with CSS!</p>
+      <button onclick="location.href='css-page.html'" class="btn">Go to CSS Tutorials</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WebDev Tutorials | Designed by Yuvraj Singh Rajput</p>
+  </footer>
+</body>
+</html>

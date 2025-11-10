@@ -1,0 +1,34 @@
+
+pre {
+  background: #0d0d0d; 
+  color: #00ffb3; 
+  text-align: left;
+  padding: 15px 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  margin-top: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 10px rgba(0, 255, 179, 0.2);
+}
+
+code {
+  background: none; 
+  color: #00ffb3;
+  font-family: 'Courier New', monospace;
+}
+
+
+p code, li code {
+  background: rgba(255,255,255,0.1);
+  color: #00ffb3;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.card.wide {
+  max-width: 900px;
+  text-align: left;
+}
