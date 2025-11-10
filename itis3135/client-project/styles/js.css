@@ -1,4 +1,31 @@
 
+body {
+  background: #0e1a2b;
+}
+
+h2 span {
+  color: #ffee58; 
+}
+
+.card {
+  border-color: rgba(255, 238, 88, 0.3);
+  box-shadow: 0 0 25px rgba(255, 238, 88, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 0 30px rgba(255, 238, 88, 0.4);
+}
+
+.btn {
+  background: #ffee58;
+  color: #000;
+  box-shadow: 0 0 12px #ffee58;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #fff176;
+}
+
 
 pre {
   background: #0d0d0d; 
@@ -32,32 +59,4 @@ p code, li code {
 .card.wide {
   max-width: 900px;
   text-align: left;
-}
-
-
-body.html {
-  background-color: #0e1a2b;
-  background-image: none;
-}
-
-h2 span {
-  color: #ff8c42; 
-}
-
-.card {
-  border-color: rgba(255, 140, 66, 0.4);
-  box-shadow: 0 0 25px rgba(255, 140, 66, 0.2);
-}
-
-.card:hover {
-  box-shadow: 0 0 30px rgba(255, 140, 66, 0.4);
-}
-
-.btn {
-  background: #ff8c42;
-  box-shadow: 0 0 12px #ff8c42;
-}
-
-.btn:hover {
-  box-shadow: 0 0 20px #ffb777;
 }

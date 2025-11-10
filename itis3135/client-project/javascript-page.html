@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDev Tutorials | JavaScript</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <link rel="stylesheet" href="styles/js.css">
+</head>
+<body class="js-page">
+
+  <header>
+    <h1 class="page-title">WebDev Tutorials</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="html-page.html">HTML</a> |
+      <a href="css-page.html">CSS</a> |
+      <a href="javascript-page.html" class="active">JavaScript</a> |
+      <a href="resources-page.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2><span>JavaScript</span> — Make Your Websites Dynamic!</h2>
+    <p>JavaScript adds interactivity, animations, and logic to your web pages. It’s the programming language of the web, used for everything from validating forms to building full web apps!</p>
+
+    <!-- Card 1 -->
+    <section class="card wide">
+      <h3>🧠 What is JavaScript?</h3>
+      <p>JavaScript (JS) is a scripting language that runs in the browser. It allows you to manipulate HTML and CSS dynamically.</p>
+      <pre><code>
+<span class="comment">// Example: Change text on button click</span>
+<span class="keyword">function</span> <span class="function">changeText</span>() {
+  <span class="keyword">document</span>.<span class="function">getElementById</span>(<span class="string">'demo'</span>).<span class="property">innerHTML</span> = <span class="string">'Hello, JavaScript!'</span>;
+}
+      </code></pre>
+    </section>
+
+    <!-- Card 2 -->
+    <section class="card wide">
+      <h3>🧩 Variables and Data Types</h3>
+      <p>Variables store data values. You can use <code>let</code>, <code>const</code>, or <code>var</code> to declare them.</p>
+      <pre><code>
+<span class="keyword">let</span> name = <span class="string">'Alice'</span>;
+<span class="keyword">const</span> age = <span class="number">20</span>;
+<span class="keyword">var</span> isStudent = <span class="keyword">true</span>;
+
+<span class="comment">// Output to console</span>
+<span class="function">console</span>.<span class="function">log</span>(name, age, isStudent);
+      </code></pre>
+    </section>
+
+    <!-- Card 3 -->
+    <section class="card wide">
+      <h3>⚙️ Functions and Events</h3>
+      <p>Functions let you group reusable code. You can trigger them using HTML events like <code>onclick</code>.</p>
+      <pre><code>
+<span class="keyword">function</span> <span class="function">greet</span>() {
+  <span class="function">alert</span>(<span class="string">'Welcome to WebDev Tutorials!'</span>);
+}
+      </code></pre>
+
+      <button class="btn" onclick="greet()">Try It</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 WebDev Tutorials | Designed by Yuvraj Singh Rajput</p>
+  </footer>
+
+  <script>
+    // Example interactive JS for this page
+    function greet() {
+      alert("Welcome to WebDev Tutorials!");
+    }
+  </script>
+
+</body>
+</html>
