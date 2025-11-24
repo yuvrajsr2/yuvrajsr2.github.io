@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peer Review 2</title>
+    <link rel="stylesheet" href="styles/default.css" />
+
+    <style>
+        main ul {
+            width: fit-content;
+            margin: 0 auto;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        main ul li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Perkins, Andrew</h2>
+
+        <figure>
+            <img src="images/perkinreview.png" alt="Screenshot of Andrew's site"
+                style="width:300px; height:auto; border:1px solid #ccc;" />
+            <figcaption>
+                <a href="https://webpages.charlotte.edu/aperki41/itis3135/client/index.html" target="_blank">
+                    https://webpages.charlotte.edu/aperki41/itis3135/client/index.html
+                </a>
+            </figcaption>
+        </figure>
+
+        <h3>Website Evaluation</h3>
+
+        <h4>Technical Requirements</h4>
+        <ul>
+            <li>The site loads properly and all links function as expected.</li>
+            <li>The header includes a logo and title, but the page name should appear inside <code>&lt;main&gt;</code>
+                as an <code>&lt;h2&gt;</code>.</li>
+            <li>Main content is present, though some pages lack consistent structure and hierarchy.</li>
+            <li>The footer is missing required validation links and a user menu.</li>
+            <li>HTML Validation: N/A</li>
+            <li>CSS Validation: No CSS validation badge is present; CSS may not validate.</li>
+            <li>The site tagline is missing and should appear consistently across pages.</li>
+        </ul>
+
+        <h4>Design & Usability (CRAP Principles)</h4>
+        <ul>
+            <li>Contrast: Legibility is acceptable, though certain areas could benefit from stronger hierarchy.</li>
+            <li>Repetition: Colors and layout are mostly consistent, but branding should repeat more clearly sitewide.
+            </li>
+            <li>Alignment: Several content sections need improved alignment to enhance readability.</li>
+            <li>Proximity: Some text groups are spaced too far apart, reducing visual grouping clarity.</li>
+            <li>Overall Design: Spacing and layout could improve using consistent margins and padding. A max-width
+                wrapper is recommended to prevent overly wide paragraphs.</li>
+            <li>Navigation: Present on all pages, but styling and spacing could be improved.</li>
+            <li>Accessibility: Some images lack alt text and should be updated.</li>
+        </ul>
+
+        <h4>Client Project Requirements (Pt. 2)</h4>
+        <ul>
+            <li>The site includes the required content pages.</li>
+            <li>Header, main, and footer elements are present, though structural consistency varies across pages.</li>
+            <li>The navigation bar is included sitewide but could benefit from improved spacing and styling.</li>
+            <li>The footer lacks required validation links and user menu.</li>
+            <li>Content is present, but page structure is not always uniform.</li>
+        </ul>
+
+        <h4>Additional Observations</h4>
+        <ul>
+            <li><strong>The Good:</strong> Clean, readable color palette; site loads correctly; functional navigation.
+            </li>
+            <li><strong>The Bad:</strong> Missing validation links and consistent footer content.</li>
+            <li><strong>The Ugly:</strong> No major issues, but consistency in structure and spacing needs work.</li>
+        </ul>
+
+        <h4>Suggestions</h4>
+        <ul>
+            <li><strong>Continue:</strong> Using a clean, readable color palette.</li>
+            <li><strong>Start:</strong> Adding validation links and a consistent footer across all pages.</li>
+            <li><strong>Stop:</strong> Placing page titles inside the header.</li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+
+</html>
