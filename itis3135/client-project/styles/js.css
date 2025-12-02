@@ -56,7 +56,7 @@ p code, li code {
   font-size: 0.9rem;
 }
 
-.card.wide {
+.card-wide {
   max-width: 900px;
   text-align: left;
 }
