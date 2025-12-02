@@ -166,3 +166,56 @@ footer p {
     max-width: 90%;
   }
 }
+
+
+
+
+/* light mode */
+.light {
+  --bg-gradient: linear-gradient(135deg, #ffffff 0%, #e4e8f0 100%);
+  --text-light: #1b1b1b;
+  --card-bg: rgba(0, 0, 0, 0.05);
+  --border-light: rgba(0, 0, 0, 0.1);
+}
+
+.light header,
+.light footer {
+  background: linear-gradient(135deg, #f0f4ff, #dbe3f8);
+  color: #000;
+}
+
+.light nav a {
+  color: #1a1a1a;
+}
+
+.light nav a.active,
+.light nav a:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.light .card {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.light p {
+  color: #222;
+}
+
+.light .btn {
+  color: #000;
+}
+
+/* Toggle button */
+.theme-btn {
+  margin: 10px auto 0;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
