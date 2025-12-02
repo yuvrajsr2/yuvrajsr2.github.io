@@ -224,3 +224,25 @@ footer p {
   font-weight: 600;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 15px;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  font-size: 18px;
+  box-shadow: 0 0 10px var(--accent);
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px var(--accent);
+}
+
+

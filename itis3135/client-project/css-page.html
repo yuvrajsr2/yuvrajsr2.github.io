@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebDev Tutorials | Learn CSS</title>
   <link rel="stylesheet" href="styles/default.css">
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles/css.css">
+  <link rel="stylesheet" href="styles/css.css">
 </head>
+
 <body>
   <header>
     <h1 class="page-title">WebDev Tutorials</h1>
@@ -15,49 +17,55 @@
       <a href="index.html">Home</a> |
       <a href="html-page.html">HTML</a> |
       <a href="css-page.html" class="active">CSS</a> |
-      <a href="javascript-page.html" >JavaScript</a> |
+      <a href="javascript-page.html">JavaScript</a> |
       <a href="resources-page.html">Resources</a>
     </nav>
   </header>
 
   <main>
     <h2>Learn CSS (Cascading Style Sheets)</h2>
-    <p>CSS controls how your website looks. It styles your HTML with colors, layouts, fonts, animations, and more — bringing your content to life!</p>
+    <p>CSS controls how your website looks. It styles your HTML with colors, layouts, fonts, animations, and more —
+      bringing your content to life!</p>
 
-    <!-- What is CSS -->
-    <section class="card wide">
+
+    <section class="card card-wide">
       <h3>🎨 What is CSS?</h3>
-      <p>CSS stands for <strong>Cascading Style Sheets</strong>. It describes how HTML elements should be displayed on screen, paper, or in other media.</p>
+      <p>CSS stands for <strong>Cascading Style Sheets</strong>. It describes how HTML elements should be displayed on
+        screen, paper, or in other media.</p>
       <p>Example:</p>
       <pre><code>p {
   color: #00ffb3;
   font-size: 18px;
   text-align: center;
 }</code></pre>
-      <p>This code styles all paragraphs (`&lt;p&gt;`) to have bright green text, centered alignment, and a readable font size.</p>
+      <p>This code styles all paragraphs (`&lt;p&gt;`) to have bright green text, centered alignment, and a readable
+        font size.</p>
     </section>
 
-    <!-- Adding CSS -->
-    <section class="card wide">
+ 
+    <section class="card card-wide">
       <h3>🔗 Ways to Add CSS</h3>
       <ul>
-        <li><strong>Inline CSS</strong> — directly inside an element’s tag:</li>
-        <pre><code>&lt;p style="color: blue;"&gt;Hello world!&lt;/p&gt;</code></pre>
+        <li><strong>Inline CSS</strong> — directly inside an element’s tag:
+          <pre><code>&lt;p style="color: blue;"&gt;Hello world!&lt;/p&gt;</code></pre>
+        </li>
 
-        <li><strong>Internal CSS</strong> — inside the <code>&lt;style&gt;</code> tag within <code>&lt;head&gt;</code>:</li>
-        <pre><code>&lt;style&gt;
+        <li><strong>Internal CSS</strong> — inside the <code>&lt;style&gt;</code> tag within <code>&lt;head&gt;</code>:
+          <pre><code>&lt;style&gt;
 p {
   color: red;
 }
 &lt;/style&gt;</code></pre>
+        </li>
 
-        <li><strong>External CSS</strong> — in a separate stylesheet linked to your HTML:</li>
-        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+        <li><strong>External CSS</strong> — in a separate stylesheet linked to your HTML:
+          <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+        </li>
       </ul>
     </section>
 
-    <!-- Selectors -->
-    <section class="card wide">
+ 
+    <section class="card card-wide">
       <h3>🧱 CSS Selectors</h3>
       <p>Selectors define which HTML elements a style applies to.</p>
       <ul>
@@ -68,8 +76,8 @@ p {
       </ul>
     </section>
 
-    <!-- Properties -->
-    <section class="card wide">
+
+    <section class="card card-wide">
       <h3>⚙️ Common CSS Properties</h3>
       <p>Here are some of the most used properties when styling a webpage:</p>
       <ul>
@@ -89,8 +97,8 @@ p {
 }</code></pre>
     </section>
 
-    <!-- Layout -->
-    <section class="card wide">
+   
+    <section class="card card-wide">
       <h3>📐 CSS Layout (Flexbox & Grid)</h3>
       <p>Modern CSS uses <strong>Flexbox</strong> and <strong>Grid</strong> to align elements easily.</p>
 
@@ -109,10 +117,11 @@ p {
 }</code></pre>
     </section>
 
-    <!-- Responsive Design -->
-    <section class="card wide">
+   
+    <section class="card card-wide">
       <h3>📱 Responsive Design</h3>
-      <p>Responsive design ensures your website looks great on any device size. Use <strong>media queries</strong> to adjust styles for smaller screens:</p>
+      <p>Responsive design ensures your website looks great on any device size. Use <strong>media queries</strong> to
+        adjust styles for smaller screens:</p>
       <pre><code>@media (max-width: 768px) {
   body {
     font-size: 16px;
@@ -124,7 +133,6 @@ p {
 }</code></pre>
     </section>
 
-    <!-- CTA -->
     <section class="cta">
       <h2>Next: Learn JavaScript</h2>
       <p>Once your pages look amazing with CSS, it’s time to make them interactive with JavaScript!</p>
@@ -135,5 +143,9 @@ p {
   <footer>
     <p>© 2025 WebDev Tutorials | Designed by Yuvraj Singh Rajput</p>
   </footer>
+
+  <button id="backToTop" class="back-to-top">↑</button>
+  <script src="scripts/scroll.js"></script>
 </body>
+
 </html>
