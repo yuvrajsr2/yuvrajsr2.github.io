@@ -64,11 +64,45 @@
       </div>
     </div>
 
+    <h2>Quick Web Dev Quiz</h2>
+    <div class="quiz-box card wide">
+      <form id="webDevQuiz">
+        <p><strong>1. What does CSS stand for?</strong></p>
+        <label><input type="radio" name="q1" value="wrong"> Computer Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="correct"> Cascading Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="wrong"> Colorful Simple Styles</label><br>
+
+        <p><strong>2. What does HTML stand for?</strong></p>
+        <label><input type="radio" name="q2" value="wrong"> Home Tool Markup Language</label><br>
+        <label><input type="radio" name="q2" value="correct"> HyperText Markup Language</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Hyperlinks and Text Markup Language</label><br>
+
+        <p><strong>3. What does DOM stand for?</strong></p>
+        <label><input type="radio" name="q3" value="wrong"> Data Object Model</label><br>
+        <label><input type="radio" name="q3" value="correct"> Document Object Model</label><br>
+        <label><input type="radio" name="q3" value="wrong"> Dynamic Output Method</label><br>
+
+        <p><strong>4. Which JavaScript statement prints to the console?</strong></p>
+        <label><input type="radio" name="q4" value="wrong"> print()</label><br>
+        <label><input type="radio" name="q4" value="correct"> console.log()</label><br>
+        <label><input type="radio" name="q4" value="wrong"> echo()</label><br>
+
+        <p><strong>5. What is the main purpose of JavaScript in web development?</strong></p>
+        <label><input type="radio" name="q5" value="wrong"> To style web pages</label><br>
+        <label><input type="radio" name="q5" value="wrong"> To structure web pages</label><br>
+        <label><input type="radio" name="q5" value="correct"> To make web pages interactive</label><br>
+
+        <button type="button" id="checkAnswerBtn" class="btn">Check Answers</button>
+      </form>
+      <p id="quizResult"></p>
+    </div>
+
     <button class="btn" onclick="location.href='index.html'">⬆ Back to Home</button>
   </main>
 
   <footer>
     <p>© 2025 WebDev Tutorials | Designed by Yuvraj Singh Rajput</p>
   </footer>
+<script src="scripts/quiz.js"></script>
 </body>
 </html>
